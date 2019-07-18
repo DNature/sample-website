@@ -1,0 +1,104 @@
+//? Extra-Large screens
+@media screen and (max-width: 1024px) {}
+
+//? Large screens
+@media screen and (max-width: 900px) {}
+
+//? Tablets
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    #contact .container {
+        flex-direction: column;
+    }
+    .clip {
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+        .titles {
+            flex-direction: column;
+            #article,
+            #article1,
+            #article2,
+            #article3,
+            #article4,
+            #article5,
+            #article6 {
+                width: 100%;
+            }
+        }
+    }
+    #contact {
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
+        .container {
+            .contact {
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .container {
+        h1 {
+            font-size: 2rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+
+//? small screens screens
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: .9rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .learn {
+        width: 100%;
+        display: block;
+        .flexbox,
+        .flexbox1,
+        .flexbox2,
+        .flexbox3,
+        .flexbox4 {
+            &.fb {
+                width: 100%;
+            }
+            &.bg-light {
+                padding: 2rem 0;
+            }
+            .bg {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//? andriod screens screens
+@media screen and (max-width: 480px) {
+    footer {
+        .container {
+            .social-icons {
+                .social {
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+}
